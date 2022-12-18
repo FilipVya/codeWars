@@ -1,16 +1,10 @@
-var humanYearsCatYearsDogYears = function(humanYears) {
-    var cat = 0;
-    var dog = 0;
-    if (humanYears === 1){
-      cat = 15;
-      dog = 15
-    } else if (humanYears === 2){
-      cat = 24;
-      dog = 24
-    } else {
-      cat = 24 + (humanYears - 2) * 4;
-      dog = 24 + (humanYears - 2) * 4;
-    }
-    return [humanYears, cat, dog];
-  }
-  humanYearsCatYearsDogYears(1)
+var hotpo = function(n){
+  var count = 0;
+ while (n !== 1) {
+   count++;
+   if (n % 2) {
+     n = 3 * n + 1}
+   else {n = n / 2}
+ }
+ return count;
+};
