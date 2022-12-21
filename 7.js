@@ -10,5 +10,5 @@ function isPythagoreanTriple(integers) {
     };
     
   }
- console.log(isPythagoreanTriple([5, 12, 13]));
+ console.log(isPythagoreanTriple([6, 12, 13]));
  
