@@ -1,13 +1,18 @@
-function pickIt(arr){
-    var odd=[],even=[];
-    //coding here
-    for(i = 0; i < arr.length; i++){
-      if (arr[i] % 2){
-        odd.push(arr[i])
+function arrayDiff(a, b) {
+    let newArr = [];
+      if (a.length === 0) {
+        return []
+      };
+    let newLength = 0;
+      if (a.length >= b.length){
+        newLength = a.length
       } else {
-        even.push(arr[i])
+        newLength = b.length};
+    for (i = 0; i < newLength; i++) {
+      if (b.indexOf(a[i]) === -1){
+        newArr.push(a[i])
       }
+    };
+    return newArr  
     }
-    
-    return [odd,even];
-  }
+
